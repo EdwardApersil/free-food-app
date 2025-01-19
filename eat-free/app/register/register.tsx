@@ -15,11 +15,6 @@ export default function Login() {
                                 className="px-4 py-2 w-full rounded border-2 border-gray-300 focus:outline-none focus:border-blue-500"
                             />
                             <input
-                                type="password"
-                                placeholder=""
-                                className="px-4 py-2 w-full rounded border-2 border-gray-300 focus:outline-none focus:border-blue-500 mt-4"
-                            />
-                            <input
                                 type="email"
                                 placeholder="Email"
                                 className="px-4 py-2 w-full rounded border-2 border-gray-300 focus:outline-none focus:border-blue-500"
@@ -27,6 +22,11 @@ export default function Login() {
                             <input
                                 type="password"
                                 placeholder="Password"
+                                className="px-4 py-2 w-full rounded border-2 border-gray-300 focus:outline-none focus:border-blue-500 mt-4"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Location"
                                 className="px-4 py-2 w-full rounded border-2 border-gray-300 focus:outline-none focus:border-blue-500 mt-4"
                             />
                             <button type="submit" className="px-4 py-2 bg-green-500 text-white rounded w-full mt-6">

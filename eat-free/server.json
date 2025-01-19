@@ -1,0 +1,73 @@
+{
+    "individualUsers": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "location": "New York, USA",
+        "orders": []
+      }
+    ],
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Green Eatery",
+        "email": "contact@greeneatery.com",
+        "password": "securePass1",
+        "location": "Los Angeles, USA",
+        "foods": [1, 2]
+      }
+    ],
+    "organizations": [
+      {
+        "id": 1,
+        "name": "Food For All",
+        "email": "ngo@foodforall.org",
+        "password": "ngoPass456",
+        "location": "Chicago, USA",
+        "orders": []
+      }
+    ],
+    "foods": [
+      {
+        "id": 1,
+        "name": "Vegetable Salad",
+        "category": "Salad",
+        "isFree": true,
+        "restaurantId": 1,
+        "availability": "2025-01-20",
+        "image": "https://via.placeholder.com/150",
+        "description": "A healthy mix of fresh vegetables."
+      },
+      {
+        "id": 2,
+        "name": "Pasta Primavera",
+        "category": "Pasta",
+        "isFree": false,
+        "restaurantId": 1,
+        "availability": "2025-01-21",
+        "image": "https://via.placeholder.com/150",
+        "description": "Classic pasta with a mix of fresh vegetables."
+      }
+    ],
+    "orders": [
+      {
+        "id": 1,
+        "userId": 1,
+        "foodId": 1,
+        "userType": "individualUser",
+        "date": "2025-01-18",
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "foodId": 2,
+        "userType": "organization",
+        "date": "2025-01-19",
+        "status": "completed"
+      }
+    ]
+  }
+  

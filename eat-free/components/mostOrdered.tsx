@@ -22,14 +22,13 @@ const MostOrderedFood = () => {
     const [allFoods, setAllFoods] = useState<Food[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
-    // const [restName, setRestName] = useState('')
 
 
     const getOrderedFood = async () => {
         try {
             const response = await axios({
                 method: "GET",
-                url: "http://localhost:5000/restaurants",
+                url: "http://localhost:8000/restaurants",
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -62,8 +61,8 @@ const MostOrderedFood = () => {
         <div className="flex flex-col gap-8 p-10">
             
             <div className="flex items-center justify-between">
-                <h2 className="text-3xl flex items-start font-bold text-center">Most Ordered Foods</h2>
-                <Link href="/foods" className="text-yellow-500">All Foods</Link>
+                <h2 className="text-2xl flex items-start font-bold text-center">Most Ordered Foods</h2>
+                <Link href="dashboard/foods" className="text-blue-500">All Foods</Link>
             </div>
 
             {loading ? ( 

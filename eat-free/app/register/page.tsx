@@ -7,6 +7,8 @@ export default function Register() {
     const userTypes = ['IndividualUser', 'Restaurants', 'Organizations'];
     const [selectedType, setSelectedType] = useState('IndividualUser');
 
+    
+
     return (
         <div className="flex h-screen">
             <div className="flex-1 flex items-center justify-center bg-gray-100">

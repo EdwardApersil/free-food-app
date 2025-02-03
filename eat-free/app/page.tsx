@@ -11,7 +11,7 @@ export default function Home() {
           <div className="space-x-4">
             <button className="px-4 py-2 text-white rounded">
               <Link href='/login'>
-                <Button variant={'outline'}>
+                <Button style={{backgroundColor: 'blue', width: '100px'}}>
                   Login
                 </Button>
               </Link>

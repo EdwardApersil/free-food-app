@@ -61,7 +61,7 @@ const MostOrderedFood = () => {
         <div className="flex flex-col gap-8 p-10">
             
             <div className="flex items-center justify-between">
-                <h2 className="text-2xl flex items-start font-bold text-center">Most Ordered Foods</h2>
+                <h2 className="text-2xl flex items-start font-bold text-center">Recently Added Foods</h2>
                 <Link href="dashboard/foods" className="text-blue-500">All Foods</Link>
             </div>
 
@@ -80,7 +80,6 @@ const MostOrderedFood = () => {
                                     image={food.image}
                                     name={food.name}
                                     description={food.description}
-                                    // restaurantsName={food.restaurantName}
                                     location={food.location}
                                     isFree={food.isFree}
                                     available={food.availability}

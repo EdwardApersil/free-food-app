@@ -6,81 +6,10 @@
       "name": "John Doe",
       "email": "john.doe@example.com",
       "password": "password123",
-      "location": "New York, USA",
-      "orders": [
-        1
-      ]
+      "location": "New York, USA"
     },
     {
-      "id": "2",
-      "userType": "restaurant",
-      "name": "Green Eatery",
-      "email": "contact@greeneatery.com",
-      "password": "securePass1",
-      "location": "Los Angeles, USA",
-      "foods": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "id": "3",
-      "userType": "organization",
-      "name": "Food For All",
-      "email": "ngo@foodforall.org",
-      "password": "ngoPass456",
-      "location": "Chicago, USA",
-      "orders": [
-        2
-      ]
-    },
-    {
-      "id": "565e",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "securePass1"
-      }
-    },
-    {
-      "id": "23d6",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "password123"
-      }
-    },
-    {
-      "id": "8846",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "password123"
-      }
-    },
-    {
-      "id": "a515",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "password123"
-      }
-    },
-    {
-      "id": "eb17",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "password123"
-      }
-    },
-    {
-      "id": "7bab",
-      "payload": {
-        "email": "john.doe@example.com",
-        "password": "password123"
-      }
-    },
-    {
-      "id": "f800",
+      "id": "c84c",
       "payload": {
         "email": "john.doe@example.com",
         "password": "password123"

@@ -1,5 +1,5 @@
 'use client'
-import { FC, Fragment } from 'react';
+import { FC, Fragment, useContext } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +14,8 @@ import { IoFastFoodSharp } from "react-icons/io5";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { SearchIcon } from 'lucide-react';
+import  Context  from '../app/store/appContext';
+
 
 
 interface AppSidebarProp {
@@ -22,6 +24,9 @@ interface AppSidebarProp {
 }
 
 const AppSidebar: FC<AppSidebarProp> = ({ children, pageTitle }) => {
+  const userProfile = useContext(Context.ProfileContext)
+  console.log(userProfile)
+
   return (
     <>
       <Head>
@@ -46,7 +51,7 @@ const AppSidebar: FC<AppSidebarProp> = ({ children, pageTitle }) => {
             <div>
               <Menu.Button className="flex items-center gap-2 focus:outline-none">
               <CgProfile className="w-5 h-5" />
-                <span className="text-gray-700">User Name</span>
+                <span className="text-gray-700">{userProfile ? userProfile.name : 'Loading...'}</span>
                 <ChevronDownIcon className="w-5 h-5 text-gray-500" />
               </Menu.Button>
             </div>

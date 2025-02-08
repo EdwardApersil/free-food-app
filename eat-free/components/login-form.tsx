@@ -21,7 +21,6 @@ export default function LoginForm({
             alert('Please fill in  the email and password fields');
             return;
         }
-
         try {
             const payload = {
                 email,
